@@ -1,3 +1,38 @@
 @import 'bootstrap_overrides';
 @import 'bootstrap';
 
+// https://color.adobe.com/color-theme_paleta-color-theme-14416159
+$green: #84A295;
+$light-green: #B7CDC2;
+$cream: #EAE6DA;
+$white: #F7F6EE;
+$red: #CC968F;
+
+
+body{
+    color: $cream;
+}
+
+.peak-nav-bar{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: $cream;
+}
+
+.peak-menu-item{
+    width: 33.3%;
+    float: left;
+    background-color: $cream;
+    border-top: 2px solid darken($color: $cream, $amount: 20);
+    border-left: 2px solid darken($color: $cream, $amount: 20);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+
+    &:first-child{
+        border-left: none;
+    }
+}
