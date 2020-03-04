@@ -1,6 +1,10 @@
 <template>
-  <div id="app">
+  <div class="container-fluid" id="app">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+    </nav>
   </div>
 </template>
 
