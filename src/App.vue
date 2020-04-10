@@ -1,40 +1,25 @@
 <template>
   <div class="container-fluid" id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+    <router-view></router-view>
     <nav class="peak-nav-bar">
-        <a class="peak-menu-item">
-            <i class="pencil"></i>
+        <router-link class="peak-menu-item" to="/">
             <font-awesome-icon icon="pencil-alt" />
-        </a>
-        <a class="peak-menu-item">
-            <font-awesome-icon icon="list" />
-        </a>
-        <a class="peak-menu-item">
-            <font-awesome-icon icon="envelope" />
-        </a>
+        </router-link>
+        <router-link class="peak-menu-item" to="/list">
+           <font-awesome-icon icon="list" />
+        </router-link>
+        <router-link class="peak-menu-item" to="/email">
+           <font-awesome-icon icon="envelope" />
+        </router-link>
     </nav>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
