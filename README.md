@@ -1,4 +1,6 @@
 # peak-flow-pwa
+An app for recording peak flow
+
 
 ## Project setup
 ```
