@@ -1,0 +1,48 @@
+@import 'bootstrap_overrides';
+@import 'bootstrap';
+
+// https://color.adobe.com/color-theme_paleta-color-theme-14416159
+$green: #84A295;
+$light-green: #B7CDC2;
+$cream: #EAE6DA;
+$white: #F7F6EE;
+$red: #CC968F;
+
+html{
+    height: 100%;
+}
+
+#app, body{
+    color: $cream;
+    min-height: 100%;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50
+}
+
+
+.peak-nav-bar{
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: $cream;
+}
+
+.peak-menu-item{
+    background-color: $cream;
+    border-top: 2px solid darken($color: $cream, $amount: 20);
+    border-left: 2px solid darken($color: $cream, $amount: 20);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    flex-grow: 1;
+
+    &:first-child{
+        border-left: none;
+    }
+}

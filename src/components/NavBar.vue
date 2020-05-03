@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid" id="app">
-    <router-view></router-view>
+  <div>
     <nav class="peak-nav-bar">
+        there
       <router-link class="peak-menu-item" to="/">
         <font-awesome-icon icon="pencil-alt" />
       </router-link>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "App",
+  name: "NavBar",
   components: {}
 };
 </script>

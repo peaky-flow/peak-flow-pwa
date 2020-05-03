@@ -1,9 +1,21 @@
+import 'bootstrap';
+import '@/assets/styles.scss'
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import { faPencilAlt, faEnvelope, faList } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+
+library.add(faPencilAlt)
+library.add(faEnvelope)
+library.add(faList)
+
 
 Vue.config.productionTip = false;
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
   router,
