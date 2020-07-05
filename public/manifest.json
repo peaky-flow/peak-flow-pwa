@@ -1,32 +1,38 @@
 {
     "theme_color": "#4DBA87", 
     "name": "peak-flow-pwa", 
-    "short_name": "peak-flow-pwa", 
+    "short_name": "peak-flow-pwa",
     "icons": [
         {
-            "src": "./img/icons/android-chrome-192x192.png", 
-            "type": "image/png", 
-            "sizes": "192x192"
-        }, 
+            "src": "./logo.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
         {
-            "src": "./img/icons/android-chrome-512x512.png", 
-            "type": "image/png", 
+            "src": "./logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./logo.png",
+            "type": "image/png",
             "sizes": "512x512"
-        }, 
+        },
         {
-            "src": "./img/icons/android-chrome-maskable-192x192.png", 
-            "type": "image/png", 
-            "purpose": "maskable", 
+            "src": "./logo.png",
+            "type": "image/png",
+            "purpose": "maskable",
             "sizes": "192x192"
-        }, 
+        },
         {
-            "src": "./img/icons/android-chrome-maskable-512x512.png", 
-            "type": "image/png", 
-            "purpose": "maskable", 
+            "src": "./logo.png",
+            "type": "image/png",
+            "purpose": "maskable",
             "sizes": "512x512"
         }
-    ], 
-    "start_url": ".", 
-    "background_color": "#000000", 
-    "display": "standalone"
+    ],
+    "start_url": "/?blah=1",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "portrait"
 }
