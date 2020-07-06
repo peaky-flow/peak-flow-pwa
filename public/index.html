@@ -13,17 +13,5 @@
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div class="container-fluid" id="app"></div>
-    <!-- built files will be auto injected -->
-    <script>
-    if ('serviceWorker' in navigator) {
-      console.log("Will the service worker register?");
-      navigator.serviceWorker.register('<%= BASE_URL %>service_worker.js')
-        .then(function(reg){
-          console.log("Yes, it did.");
-        }).catch(function(err) {
-          console.log("No it didn't. This happened: ", err)
-        });
-    }
-    </script>
   </body>
 </html>
